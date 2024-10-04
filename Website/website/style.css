@@ -11,11 +11,26 @@ body {
     height: 100vh; /* Full height of the viewport */
 }
 
-
+/* Slogan Styles */
+.slogan-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
 
 .slogan {
     color: white;
     text-shadow: 0px 0px 20px black;
+    letter-spacing: 5px;
+    max-width: 30em;
+    text-align: center; /* Center text within slogan */
+    padding: 20px; /* Optional: add some padding */
+}
+
+.slogan h1 {
+    font-size: 50px;
 }
 
 /* Links */
