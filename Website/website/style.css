@@ -118,4 +118,78 @@ body {
 
 /* Resources */
 
+/* Home Screen Image Buttons */
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.imgContainer img {
+    width: 250%;
+    height: auto;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 5%;
+}
+  
+.imgContainer .btn1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(200%, -250%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.imgContainer .btn1:hover {
+    background-color: black;
+}
+
+.imgContainer .btn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(580%, -250%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.imgContainer .btn2:hover {
+    background-color: black;
+}
+
+.imgContainer .btn3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(400%, 500%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.imgContainer .btn3:hover{
+    background-color: black;
+}
 
