@@ -11,19 +11,17 @@ body {
     height: 100vh; /* Full height of the viewport */
 }
 
+
+
+.slogan {
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+
 /* Links */
 a {
     color: #232049;
     text-decoration: none;
-}
-
-/* Text Shadow */
-.shadeLetterBlack {
-    text-shadow: 0px 0px 20px black;
-}
-
-.shadeLetterWhite {
-    text-shadow: 0px 0px 2px white;
 }
 
 /* Header and Navigation */
@@ -53,6 +51,7 @@ nav ul li {
 nav ul li a {
     color: #232049;
     font-size: 15px; /* Increases font size */
+    font-weight: bold;
     padding: 10px 20px; /* Padding around the text */
     text-transform: uppercase; /* Makes text uppercase */
     letter-spacing: 1px; /* Adds spacing between letters */
@@ -62,7 +61,13 @@ nav ul li a {
 }
 
 nav ul li img {
-    max-height: 50px; /* Adjust logo size */
+    max-height: 90px; /* Adjust logo size */
+    margin-right: 400px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+nav ul li a:hover img {
+    transform: scale(1.1); /* Scale up the image to 110% of its size */
 }
 
 nav ul li a:hover {
@@ -75,24 +80,49 @@ footer {
     background-color: #b4bbc1;
 }
 
-/* Showcase Section - Removed background color */
+/* Showcase Section */
+
 .showcase {
-    /* background-color: lightgrey; */ /* Commented out */
+    padding: 5%;
 }
+
 
 /* Info Card Styles */
 .info-card {
     flex: 1;
+    padding: 20px;
+    text-align: left; /* Center text in each card */
+    max-width: 20em;
+    background-color: rgba(211, 211, 211, 0.3); /* Light grey with 80% opacity */
+    border-radius: 10%;
+    margin: 10px;
+    transition: transform 0.5s ease; /* Add transition for smooth scaling */
+}
+
+.info-card:hover {
+    transform: scale(1.1); /* Use transform for scaling */
+}
+
+/* Info Text Styles */
+.info-text {
+    color: white; 
+    flex: 1; 
     padding: 10px;
-    text-align: center; /* Center text in each card */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 40em;
+    text-shadow: 0px 0px 20px black;
 }
 
-.white-text {
-    color: white; /* Helper class for white text */
-}
-
-.black-text {
-    color: black; /* Helper class for black text */
+/* Info Img Styles */
+.info-img {
+    width: 40em;
+    width: 100%; 
+    height: auto; 
+    box-shadow: 0px 0px 20px #27070c; 
+    border-radius: 5%;
 }
 
 /* Button Styles */
