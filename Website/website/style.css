@@ -1,28 +1,39 @@
 /* Base styles */
-
 body {
+    font-family: 'Prompt';
+    color: #232049;
     text-decoration: none;
+    background: grey;
+    background-image: url("assets/AIBackground2.jpg");
+    background-size: cover;
 }
 
+/* Links */
 a {
-    color: inherit;
+    color: #232049;
     text-decoration: none;
 }
 
+/* Flexbox Layout */
 .row {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     flex-basis: auto;
+    flex-direction: row;
+    padding: 10px; /* Consistent spacing */
 }
-  
+
 .column {
     flex: 1;
     flex-wrap: wrap;
     flex-basis: auto;
     max-width: 20em;
+    flex-direction: column;
+    padding: 10px; /* Consistent spacing */
 }
 
+/* Text Shadow */
 .shadeLetterBlack {
     text-shadow: 0px 0px 20px black;
 }
@@ -31,154 +42,96 @@ a {
     text-shadow: 0px 0px 2px white;
 }
 
-/* 01 Centering */
+/* Navigation */
 
-.slogan {
-    text-align: right;
+nav {
+    margin-top: 25px; /* Makes sure the nav isnt too high on the page*/
+}
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontal alignment */
+    justify-content: space-around; /* Optional: distribute the items evenly */
+    align-items: center; /* Aligns items vertically in the center */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
 
+nav ul li {
+    margin-right: 25%; /* Space between each item */
+}
+
+nav ul li a {
+    color: #232049;
+    font-size: 15px; /* Increases font size */
+    padding: 10px 20px; /* Padding around the text */
+    text-transform: uppercase; /* Makes text uppercase */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    white-space: nowrap; /* Ensures the text inside links does not wrap */
+    text-shadow: none; /* Ensures no shadow is applied by default */
+    transition: color 0.2s ease, text-shadow 0.5s ease; /* Smooth transition for color and shadow */
+}
+
+nav ul li img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+nav ul li a:hover {
+    color: lightblue;
+    text-shadow: 0px 0px 5px #232049;  /* Light shadow */
+}
+
+/* Extra space for the logo */
+nav ul li:first-child {
+    margin-left: 100px;
+    margin-right: 120px; /* Extra space after the logo */
+}
+
+
+/* Header Buttons */
 .headerButton {
     text-align: center;
+    padding: 2%; /* Spacing */
 }
 
-.row {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
-}
-
-/* 02 Font family */
-
-body {
-    font-family: 'Prompt';
-}
-
-/* 03 Spacing */
-
-.row {
-    padding:10px;
-}
-
-.column {
-    padding:10px;
-}
-
-/* 04 Color and contrast */
-
-body {
-    color: #232049;
-}
-
-/* 05 Balance */
-
-.headerButton {
-    padding: 2%;
-}
-
+/* Centering Text */
 .slogan {
+    text-align: right;
     margin-right: 10%;
 }
 
-/* 06 Primary color */
-
-a {
-    color: #232049;
-}
-
-/* 07 Secondary colors */
-
-body {
-    background: grey;
-}
-
-header {
-    background-color: transparent;
-}
-
-footer{
+/* Footer */
+footer {
     background-color: #232049;
 }
 
-.showcase{
+/* Showcase Section */
+.showcase {
     background-color: lightgrey;
 }
 
-/* 08 Custom font */
-
-/* 09 Images */
-
-body {
-    background-image: url("assets/AIBackground2.jpg");
-    background-size: cover;
-}
-
-/* Classes */
-
-/* Resources */
-
 /* Home Screen Image Buttons */
-
 .imgContainer {
     position: relative;
     width: 100%;
     max-width: 400px;
 }
-  
+
 .imgContainer img {
     width: 250%;
     height: auto;
     box-shadow: 0px 0px 20px black;
     border-radius: 5%;
 }
-  
-.imgContainer .btn1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(200%, -250%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-  
-.imgContainer .btn1:hover {
-    background-color: black;
-}
 
-.imgContainer .btn2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(580%, -250%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-  
-.imgContainer .btn2:hover {
-    background-color: black;
-}
-
+/* Button 1 */
+.imgContainer .btn1,
+.imgContainer .btn2,
 .imgContainer .btn3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(400%, 500%);
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: #555;
     color: white;
     font-size: 16px;
@@ -188,8 +141,28 @@ body {
     border-radius: 5px;
     text-align: center;
 }
-  
-.imgContainer .btn3:hover{
+
+.imgContainer .btn1 {
+    transform: translate(200%, -250%);
+}
+
+.imgContainer .btn1:hover,
+.imgContainer .btn2:hover,
+.imgContainer .btn3:hover {
     background-color: black;
 }
 
+/* Button 2 */
+.imgContainer .btn2 {
+    transform: translate(580%, -250%);
+}
+
+/* Button 3 */
+.imgContainer .btn3 {
+    transform: translate(400%, 500%);
+}
+
+/* Header */
+header {
+    background-color: transparent;
+}
