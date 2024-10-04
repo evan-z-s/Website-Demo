@@ -133,30 +133,75 @@ footer {
 
 /* Info Img Styles */
 .info-img {
+    position: relative; /* Make the container a reference point for absolute positioning */
     width: 40em;
     width: 100%; 
     height: auto; 
     box-shadow: 0px 0px 20px #27070c; 
     border-radius: 5%;
+    margin: 150px;
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3); /* Scale up to 110% */
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Button Styles */
 .btn1, .btn2, .btn3 {
-    background-color: #555;
+    background-color: rgba(10, 36, 90, 0.7); /* Translucent dark grey with 70% opacity */
     color: white;
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: 14px; /* Adjust font size for smaller buttons */
+    padding: 10px; /* Reduced padding for smaller size */
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50%; /* Makes buttons round */
     text-align: center;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Smooth transition */
     margin-top: 10px; /* Spacing above buttons */
+    position: relative; /* Position relative to the container */
+    width: 20px; /* Set a fixed width */
+    height: 20px; /* Set a fixed height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for better visibility */
+    animation: pulse 2s infinite; /* Apply pulse animation */
 }
 
+/* Hover Effects */
 .btn1:hover, .btn2:hover, .btn3:hover {
-    background-color: black; /* Hover effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker translucent background on hover */
+    animation: none; /* Stop pulsing effect on hover */
 }
+
+/* Hover Text Styles */
+.hover-text {
+    position: absolute;
+    bottom: 50px; /* Position above the button */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the hover text */
+    color: white;
+    padding: 5px 10px; /* Padding around hover text */
+    border-radius: 5px; /* Rounded corners */
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition */
+    visibility: hidden; /* Ensure it does not occupy space */
+}
+
+/* Show hover text on button hover */
+.button-container:hover .hover-text {
+    opacity: 1; /* Make the hover text visible */
+    visibility: visible; /* Ensure it's visible */
+}
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
