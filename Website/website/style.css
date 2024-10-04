@@ -1,11 +1,11 @@
 /* Base styles */
 body {
-    font-family: 'Prompt';
+    font-family: 'Prompt', sans-serif;
     color: #232049;
     text-decoration: none;
-    background: grey;
+    background: #b4bbc1;
     background-image: url("assets/IndependenceRoboticsArm.jpg");
-    background-size: cover; /* Ensures the image covers the whole area */
+    background-size: auto; /* Keep the original size of the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the background fixed in place */
     height: 100vh; /* Full height of the viewport */
@@ -17,23 +17,6 @@ a {
     text-decoration: none;
 }
 
-/* Flexbox Layout */
-.row {
-    display: flex;
-    flex-direction: row; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text within each item */
-}
-
-.column {
-    flex: 1;
-    flex-basis: auto;
-    max-width: 20em;
-    padding: 10px; /* Consistent spacing */
-    text-align: center; /* Center text within the column */
-}
-
 /* Text Shadow */
 .shadeLetterBlack {
     text-shadow: 0px 0px 20px black;
@@ -43,7 +26,11 @@ a {
     text-shadow: 0px 0px 2px white;
 }
 
-/* Navigation */
+/* Header and Navigation */
+header {
+    background-color: transparent;
+}
+
 nav {
     margin-top: 25px; /* Keeps the nav from being too high on the page */
     text-align: center; /* Center the text within the nav */
@@ -80,61 +67,36 @@ nav ul li img {
 
 nav ul li a:hover {
     color: lightblue;
-    text-shadow: 0px 0px 5px #232049;  /* Light shadow */
-}
-
-/* Extra space for the logo */
-nav ul li:first-child {
-    margin-left: 0; /* Remove left margin */
-    margin-right: 20px; /* Optional: space after the logo */
-}
-
-
-
-/* Header Buttons */
-.headerButton {
-    text-align: center;
-    padding: 2%; /* Spacing */
-}
-
-/* Centering Text */
-.slogan {
-    text-align: right;
-    margin-right: 10%;
+    text-shadow: 0px 0px 5px #232049; /* Light shadow */
 }
 
 /* Footer */
 footer {
-    background-color: #232049;
+    background-color: #b4bbc1;
 }
 
-/* Showcase Section */
+/* Showcase Section - Removed background color */
 .showcase {
-    background-color: lightgrey;
+    /* background-color: lightgrey; */ /* Commented out */
 }
 
-/* Home Screen Image Buttons */
-.imgContainer {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
+/* Info Card Styles */
+.info-card {
+    flex: 1;
+    padding: 10px;
+    text-align: center; /* Center text in each card */
 }
 
-.imgContainer img {
-    width: 250%;
-    height: auto;
-    box-shadow: 0px 0px 20px black;
-    border-radius: 5%;
+.white-text {
+    color: white; /* Helper class for white text */
 }
 
-/* Button 1 */
-.imgContainer .btn1,
-.imgContainer .btn2,
-.imgContainer .btn3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.black-text {
+    color: black; /* Helper class for black text */
+}
+
+/* Button Styles */
+.btn1, .btn2, .btn3 {
     background-color: #555;
     color: white;
     font-size: 16px;
@@ -143,29 +105,21 @@ footer {
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 10px; /* Spacing above buttons */
 }
 
-.imgContainer .btn1 {
-    transform: translate(200%, -250%);
+.btn1:hover, .btn2:hover, .btn3:hover {
+    background-color: black; /* Hover effect */
 }
 
-.imgContainer .btn1:hover,
-.imgContainer .btn2:hover,
-.imgContainer .btn3:hover {
-    background-color: black;
-}
-
-/* Button 2 */
-.imgContainer .btn2 {
-    transform: translate(580%, -250%);
-}
-
-/* Button 3 */
-.imgContainer .btn3 {
-    transform: translate(400%, 500%);
-}
-
-/* Header */
-header {
-    background-color: transparent;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack footer items on smaller screens */
+        align-items: center; /* Center align */
+    }
+    nav ul li {
+        margin: 0 15px; /* Reduce margin for smaller screens */
+    }
 }
