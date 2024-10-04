@@ -98,6 +98,12 @@ nav ul li a:hover {
     padding: 5%;
 }
 
+/* Info Container */
+
+.info-container {
+    text-align: left; /* Optional: Center align the text and button */
+    margin: 20px; /* Adds margin around the container */
+}
 
 /* Info Card Styles */
 .info-card {
@@ -123,10 +129,36 @@ nav ul li a:hover {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 100px;
-    margin-bottom: 100px;
     max-width: 40em;
     text-shadow: 0px 0px 20px black;
 }
+
+/* Info Btn Styles */
+.info-btn {
+    color: #051c5a;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.5); /* Light grey with 50% opacity */
+    border-radius: 5%;
+    font-size: 25px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block; /* Change display to inline-block */
+    text-align: center; /* Centers text within the button */
+    transition: transform 0.5s ease; /* Add transition for smooth scaling */
+}
+
+.info-btn a {
+    color: inherit; /* Ensures the link inherits the button color */
+    text-decoration: none; /* Removes underline from link */
+}
+
+.info-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* INFO PICTURE ****************************************************************************/
+
 
 /* Info Img Styles */
 .info-img {
@@ -198,7 +230,7 @@ nav ul li a:hover {
     opacity: 1; /* Make the hover text visible */
     visibility: visible; /* Ensure it's visible */
 }
-
+/* *****************************************************************************************/
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
