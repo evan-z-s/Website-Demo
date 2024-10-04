@@ -4,8 +4,11 @@ body {
     color: #232049;
     text-decoration: none;
     background: grey;
-    background-image: url("assets/AIBackground2.jpg");
-    background-size: cover;
+    background-image: url("assets/IndependenceRoboticsArm.jpg");
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed in place */
+    height: 100vh; /* Full height of the viewport */
 }
 
 /* Links */
@@ -17,20 +20,18 @@ a {
 /* Flexbox Layout */
 .row {
     display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    flex-direction: row;
-    padding: 10px; /* Consistent spacing */
+    flex-direction: row; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within each item */
 }
 
 .column {
     flex: 1;
-    flex-wrap: wrap;
     flex-basis: auto;
     max-width: 20em;
-    flex-direction: column;
     padding: 10px; /* Consistent spacing */
+    text-align: center; /* Center text within the column */
 }
 
 /* Text Shadow */
@@ -43,22 +44,23 @@ a {
 }
 
 /* Navigation */
-
 nav {
-    margin-top: 25px; /* Makes sure the nav isnt too high on the page*/
+    margin-top: 25px; /* Keeps the nav from being too high on the page */
+    text-align: center; /* Center the text within the nav */
 }
+
 nav ul {
     list-style-type: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
     display: flex; /* Horizontal alignment */
-    justify-content: space-around; /* Optional: distribute the items evenly */
+    justify-content: center; /* Center the items horizontally */
     align-items: center; /* Aligns items vertically in the center */
     white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
 
 nav ul li {
-    margin-right: 25%; /* Space between each item */
+    margin: 0 30px; /* Space between each item, adjust as necessary */
 }
 
 nav ul li a {
@@ -83,9 +85,10 @@ nav ul li a:hover {
 
 /* Extra space for the logo */
 nav ul li:first-child {
-    margin-left: 100px;
-    margin-right: 120px; /* Extra space after the logo */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 20px; /* Optional: space after the logo */
 }
+
 
 
 /* Header Buttons */
