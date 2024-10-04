@@ -1,31 +1,118 @@
-header{
-    background-color: grey;
-    font-size: larger;
+/* Base styles */
+
+body {
+    text-decoration: none;
 }
 
-footer{
-    background-color: darkgrey;
-}
-
-.enlarge{
-    transition:all .2s ease-in-out;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .row {
+    display: flex;
     flex: 1;
     flex-wrap: wrap;
     flex-basis: auto;
-    padding:10px;
 }
   
 .column {
     flex: 1;
     flex-wrap: wrap;
     flex-basis: auto;
+    max-width: 20em;
+}
+
+/* 01 Centering */
+
+.slogan {
+    text-align: right;
+}
+
+.headerButton {
+    text-align: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* 02 Font family */
+
+body {
+    font-family: 'Prompt';
+}
+
+/* 03 Spacing */
+
+.row {
     padding:10px;
 }
 
-.headerButton{
-    text-align: center;
+.column {
+    padding:10px;
+}
+
+/* 04 Color and contrast */
+
+body {
+    color: darkblue;
+}
+
+/* 05 Balance */
+
+.headerButton {
     padding: 2%;
 }
+
+.slogan {
+    margin-right: 10%;
+}
+
+/* 06 Primary color */
+
+a {
+    color: darkblue;
+}
+
+/* 07 Secondary colors */
+
+body {
+    background: grey;
+}
+
+header {
+    background-color: grey;
+}
+
+footer{
+    background-color: darkgrey;
+}
+
+.showcase{
+    background-color: lightgrey;
+}
+
+/* 08 Custom font */
+
+/* 09 Images */
+
+body{
+    background-image: url("assets/AIBackground.jpg");
+    background-size: 100%;
+}
+
+header{
+    background-image: url("assets/IndependenceRoboticsArm.jpg");
+    background-size: 100%;
+}
+
+/* Classes */
+
+/* Resources */
+
+
