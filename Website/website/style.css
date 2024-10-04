@@ -1,3 +1,8 @@
+header{
+    font-size: larger;
+}
+
+
 .enlarge{
     transition:all .2s ease-in-out;
 }
