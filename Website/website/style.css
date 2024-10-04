@@ -23,6 +23,14 @@ a {
     max-width: 20em;
 }
 
+.shadeLetterBlack {
+    text-shadow: 0px 0px 20px black;
+}
+
+.shadeLetterWhite {
+    text-shadow: 0px 0px 2px white;
+}
+
 /* 01 Centering */
 
 .slogan {
@@ -102,7 +110,7 @@ footer{
 /* 09 Images */
 
 body {
-    background-image: url("assets/AIBackground.jpg");
+    background-image: url("assets/AIBackground2.jpg");
     background-size: cover;
 }
 
