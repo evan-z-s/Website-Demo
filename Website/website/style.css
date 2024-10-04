@@ -60,7 +60,7 @@ body {
 /* 04 Color and contrast */
 
 body {
-    color: darkblue;
+    color: #232049;
 }
 
 /* 05 Balance */
@@ -76,7 +76,7 @@ body {
 /* 06 Primary color */
 
 a {
-    color: darkblue;
+    color: #232049;
 }
 
 /* 07 Secondary colors */
@@ -86,11 +86,11 @@ body {
 }
 
 header {
-    background-color: grey;
+    background-color: transparent;
 }
 
 footer{
-    background-color: darkgrey;
+    background-color: #232049;
 }
 
 .showcase{
@@ -101,14 +101,9 @@ footer{
 
 /* 09 Images */
 
-body{
+body {
     background-image: url("assets/AIBackground.jpg");
-    background-size: 100%;
-}
-
-header{
-    background-image: url("assets/IndependenceRoboticsArm.jpg");
-    background-size: 100%;
+    background-size: cover;
 }
 
 /* Classes */
