@@ -4,7 +4,7 @@ body {
     color: #232049;
     text-decoration: none;
     background: #b4bbc1;
-    background-image: url("assets/IndependenceRoboticsArm.jpg");
+    background-image: url("assets/IndependentRoboticsArm1.jpg");
     background-size: auto; /* Keep the original size of the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the background fixed in place */
@@ -16,7 +16,7 @@ body {
     display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 300px;
 }
 
@@ -104,6 +104,10 @@ nav ul li a:hover {
 
 /* Footer */
 
+footer {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
 .footer-container {
     display: flex; 
     justify-content: flex-start; 
@@ -147,16 +151,25 @@ nav ul li a:hover {
     margin: 20px; /* Adds margin around the container */
 }
 
+.info-container h1 {
+    font-size: 100px;
+    padding-top: 100px;
+}
+
 /* Info Card Styles */
 .info-card {
     flex: 1;
     padding: 20px;
     text-align: left; /* Center text in each card */
     max-width: 20em;
-    background-color: rgba(255, 255, 255, 0.575); /* Light grey with 80% opacity */
+    background-color: rgba(255, 255, 255, 1); /* Light grey with 80% opacity */
     border-radius: 25px;
     margin: 10px;
     transition: transform 0.5s ease; /* Add transition for smooth scaling */
+}
+
+.info-card h2 {
+    text-align: center;
 }
 
 .info-card p {
@@ -164,7 +177,7 @@ nav ul li a:hover {
 }
 
 .info-card:hover {
-    transform: scale(1.1); /* Use transform for scaling */
+    transform: scale(1.05); /* Use transform for scaling */
 }
 
 .info-highlight {
