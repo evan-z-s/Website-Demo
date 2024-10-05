@@ -139,9 +139,9 @@ nav ul li a:hover {
     color: #051c5a;
     font-weight: bold;
     background-color:rgba(255, 255, 255, 0.5); /* Light grey with 50% opacity */
-    border-radius: 5%;
+    border-radius: 20px;
     font-size: 25px;
-    padding: 10px;
+    padding: 15px 40px;
     margin: 20px;
     display: inline-block; /* Change display to inline-block */
     text-align: center; /* Centers text within the button */
@@ -155,6 +155,43 @@ nav ul li a:hover {
 
 .info-btn:hover {
     transform: scale(1.1);
+}
+
+.info-pre-order {
+    color: white; 
+    flex: 1; 
+    padding-top: 25px;
+    padding-left: 250;
+    padding-right: 250;
+    margin: 15px;
+    max-width: 40em;
+    text-shadow: 0px 0px 20px black;
+
+    /*Background Circle*/
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 50px;
+}
+
+.info-pre-order p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.info-pre-order a {
+    color: #051c5a; /* Button text color */
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block; /* Ensure it behaves like a block element */
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.5s ease, color 0.2s ease, text-shadow 0.5s ease; /* Smooth transition for color and shadow */
+}
+
+.info-pre-order a:hover {
+    transform: scale(1.1);
+    color: lightblue;
+    text-shadow: 0px 0px 10px #232049; /* Light shadow */
 }
 
 
