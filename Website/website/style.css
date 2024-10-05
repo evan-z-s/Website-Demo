@@ -101,6 +101,7 @@ nav ul li a:hover {
 /* Info Container */
 
 .info-container {
+    display: flex; justify-content: center; align-items: center;
     text-align: left; /* Optional: Center align the text and button */
     margin: 20px; /* Adds margin around the container */
 }
