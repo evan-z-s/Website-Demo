@@ -90,6 +90,18 @@ nav ul li a:hover {
     text-shadow: 0px 0px 5px #232049; /* Light shadow */
 }
 
+.nav-pre-order {
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
+    transition: background-color 0.5s ease; /* Smooth transition for color and shadow */
+}
+
+.nav-pre-order:hover {
+    background-color: #051c5a73;
+}
+
 /* Footer */
 
 /* Showcase Section */
