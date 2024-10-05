@@ -104,6 +104,33 @@ nav ul li a:hover {
 
 /* Footer */
 
+.footer-container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 5px;
+}
+
+.footer-btn {
+    text-decoration:none; 
+    padding:20px;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.footer-btn:hover {
+    transform: scale(1.1);
+}
+
+.footer-img {
+    height: auto; /* Maintain aspect ratio or set a specific height */
+    width: 60px; /* Set the desired width */
+}
+
+.footer-copyright {
+    color: #051c5a;
+    margin-left: auto; /* This pushes the copyright text to the end */
+}
+
 /* Showcase Section */
 
 .showcase {
@@ -144,6 +171,10 @@ nav ul li a:hover {
     margin-top: 100px;
     max-width: 40em;
     text-shadow: 0px 0px 20px black;
+}
+
+.info-img {
+    border-radius: 10px;
 }
 
 /* Info Btn Styles */
@@ -211,13 +242,13 @@ nav ul li a:hover {
 
 
 /* Info Img Styles */
-.info-img {
+.info-interact-img {
     position: relative; /* Make the container a reference point for absolute positioning */
     width: 40em;
     width: 100%; 
     height: auto; 
     box-shadow: 0px 0px 20px #051c5a; 
-    border-radius: 5%;
+    border-radius: 10px;
     margin: 150px;
 }
 
