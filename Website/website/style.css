@@ -32,15 +32,16 @@ body {
 .about-us h1 {
     font-size:80px; /* Adjust the heading size */
     color: white;
+    text-shadow: 0px 0px 20px black;
 }
 
 .about-us p {
     font-size:20px; /* Adjust the paragraph font size */
+    text-shadow: 0px 0px 20px black;
 }
 
 .about-us-img {
-    
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
 }
 
@@ -155,7 +156,7 @@ nav ul li a:hover {
 
 .nav-pre-order {
     background-color: rgba(255, 255, 255, 0.384);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
     transition: background-color 0.5s ease; /* Smooth transition for color and shadow */
@@ -263,7 +264,7 @@ footer {
 /* Info Img Styles */
 
 .info-img {
-    border-radius: 10px;
+    border-radius: 25px;
     max-width: 500px;
     max-height: auto;
     margin: 50px;
@@ -343,7 +344,7 @@ footer {
     width: 100%; 
     height: auto; 
     box-shadow: 0px 0px 20px black; 
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 150px;
 }
 
