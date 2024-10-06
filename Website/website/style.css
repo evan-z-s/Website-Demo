@@ -11,6 +11,33 @@ body {
     height: 100vh; /* Full height of the viewport */
 }
 
+/* Abous Us Specifics */
+#about-us-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: left; /* Optional: Center align the text and button */
+    margin: 20px; /* Adds margin around the container */
+}
+
+.about-us {
+    color: white;
+    max-width: 60%;
+    align-items: center;
+    display: flex; /* Enables Flexbox */
+    gap: 100px; /* Adds space between the heading and the paragraphs */
+    margin: 100px;
+}
+
+.about-us h1 {
+    font-size:80px; /* Adjust the heading size */
+    color: white;
+}
+
+.about-us p {
+    font-size:20px; /* Adjust the paragraph font size */
+}
+
 /* Slogan Styles */
 .slogan-container {
     display: flex; /* Use flexbox for centering */
