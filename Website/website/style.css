@@ -111,6 +111,86 @@ body {
     justify-content: center;
 }
 
+/*Contact Form*********************************************************/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adds space between the form fields */
+    max-width: 600px; /* Limit the form width */
+    margin: 20px auto; /* Center the form */
+    padding: 30px;
+    
+    background-color: whitesmoke; /* Light background */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Styling the form labels */
+.contact-form label {
+    font-weight: bold;
+    color: #232049; /* Custom color for labels */
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+/* Styling text inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    font-size: 15px;
+    font-weight: 600;
+    
+    padding: 5px;
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+    transition: border-color 0.3s ease;
+}
+
+/* Styling the message text area */
+.contact-form textarea {
+    font-size: 15px;
+    font-weight: 900;
+    
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px; /* Sets a fixed height for the textarea */
+    box-sizing: border-box;
+    resize: vertical; /* Allows vertical resizing only */
+    transition: border-color 0.3s ease;
+}
+
+/* Add a border color change on focus */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: lightblue;
+    outline: none; /* Remove default outline */
+}
+
+/* Styling the submit button */
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #232049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    background-color: lightblue;
+}
+
+/***********************************************************************/
+
+
 /* Slogan Styles */
 .slogan-container {
     display: flex; /* Use flexbox for centering */

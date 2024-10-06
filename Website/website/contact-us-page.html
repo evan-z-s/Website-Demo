@@ -30,9 +30,23 @@
                 <h1>We'd Love To Hear From You!</h1>
                 <p>Whether you have questions, feedback, or need support, our team is here to help. Please feel free to reach out to us using the contact details below or by filling out the form.</p>
             </div>
-        </div>
-        <div class="contact-us-container">
-            <img class="contact-us-img" src="assets/IndependenceRoboticsDemo2.jpg">
+            <div class="contact-us-container">
+                <form action="contact-form-handler.php" method="post" class="contact-form">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                
+                    <button type="submit">Send</button>
+                </form>            
+            </div>
         </div>
     </div>
 
