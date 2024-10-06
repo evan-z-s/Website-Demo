@@ -12,7 +12,7 @@ body {
 }
 
 /* Abous Us Specifics */
-#about-us-container {
+.about-us-container {
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -36,6 +36,11 @@ body {
 
 .about-us p {
     font-size:20px; /* Adjust the paragraph font size */
+}
+
+.about-us-img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
 }
 
 /* Slogan Styles */
