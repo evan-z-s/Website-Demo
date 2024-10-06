@@ -75,6 +75,42 @@ body {
     transform: scale(1.05); /* Use transform for scaling */
 }
 
+/*Contact Us Specifics*/
+
+.contact-us-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: left; /* Optional: Center align the text and button */
+    margin: 20px; /* Adds margin around the container */
+}
+
+.contact-us-text {
+    color: white; 
+    padding: 10px;
+    margin: 50px;
+    margin-right: 20px;
+    max-width: 40em;
+    text-shadow: 0px 0px 20px black;
+}
+
+.contact-us-text h1 {
+    color: white; 
+    font-size: 40px;
+}
+
+.contact-us-text p {
+    color: white; 
+    font-size: 20px;
+}
+
+.contact-us-img {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
+    display: flex;
+    justify-content: center;
+}
+
 /* Slogan Styles */
 .slogan-container {
     display: flex; /* Use flexbox for centering */
