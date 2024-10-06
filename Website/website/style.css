@@ -26,7 +26,7 @@ body {
     align-items: center;
     display: flex; /* Enables Flexbox */
     gap: 100px; /* Adds space between the heading and the paragraphs */
-    margin: 100px;
+    margin: 50px;
 }
 
 .about-us h1 {
@@ -39,8 +39,39 @@ body {
 }
 
 .about-us-img {
+    
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
+}
+
+.about-us-card {
+    flex: 1;
+    padding: 15px;
+    text-align: left; /* Center text in each card */
+    max-width: 190px;
+    background-color: whitesmoke; /* Light grey with 80% opacity */
+    border-radius: 25px;
+    margin: 20px;
+    margin-bottom: 100px;
+    transition: transform 0.5s ease; /* Add transition for smooth scaling */
+}
+
+.about-us-card h3 {
+    color: black;
+    font-weight: 600;
+    margin: 0;
+}
+
+.about-us-card p {
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0;
+}
+
+.about-us-card:hover {
+    transform: scale(1.05); /* Use transform for scaling */
 }
 
 /* Slogan Styles */
