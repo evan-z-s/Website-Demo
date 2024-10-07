@@ -266,9 +266,28 @@ html {
     font-size: 50px;
 }
 
+.contact-us-text a {
+    color: white; 
+    font-size: 25px;
+}
+
 .contact-us-text p {
     color: white; 
     font-size: 25px;
+}
+
+.contact-us-detail {
+    display: flex; /* Aligns the image and text horizontally */
+    align-items: center; /* Centers the image and text vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Ensures text inherits color */
+    width: 50px;
+    transition: transform 0.5s ease;
+}
+
+.contact-us-detail:hover {
+    color: lightblue; /* Change color on hover for better UX */
+    transform: scale(1.05);
 }
 
 .contact-us-img {
