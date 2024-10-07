@@ -24,6 +24,16 @@ html {
     margin: 20px; /* Adds margin around the container */
 }
 
+.pre-order-highlight {
+    color:#232049;
+    text-shadow: none;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
 .pre-order-text {
     color: white; 
     padding: 10px;
