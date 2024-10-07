@@ -25,13 +25,7 @@ html {
 }
 
 .pre-order-highlight {
-    color:#232049;
-    text-shadow: none;
-    background-color: whitesmoke;
-    border-radius: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+    font-size: 22px;
 }
 
 .pre-order-text {
