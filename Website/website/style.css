@@ -11,6 +11,10 @@ body {
     height: 100vh; /* Full height of the viewport */
 }
 
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 /* Pre-Order Specifics */
 .pre-order-container {
     display: flex; 
@@ -24,13 +28,15 @@ body {
     color: white; 
     padding: 10px;
     margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 180px;
     max-width: 70em;
     text-shadow: 0px 0px 20px black;
 }
 
 .pre-order-text h1 {
     color: white; 
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .pre-order-text h2 {
@@ -64,6 +70,19 @@ body {
     font-size: 20px;
 }
 
+/*Pre-Order Arrow*/
+.arrow-btn {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.arrow-img {
+    width: 60px;
+    rotate: 90deg;
+    animation: pulse 2s infinite; /* Apply the pulse animation */
+}
+
 /*Pre-Order Form*/
 .pre-order-form-container {
     margin: 100px;
@@ -75,7 +94,7 @@ body {
     max-width: 500px; /* Limit the form width */
     min-width: 200px;
     margin: 20px auto; /* Center the form */
-    padding: 30px;
+    padding: 20px;
     
     background-color: whitesmoke; /* Light background */
     border-radius: 25px;
@@ -83,7 +102,7 @@ body {
 }
 
 .pre-order-form div {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
 }
 
 .pre-order-form label {
