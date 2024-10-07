@@ -11,6 +11,62 @@ body {
     height: 100vh; /* Full height of the viewport */
 }
 
+/* Pre-Order Specifics */
+.pre-order-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    text-align: left; /* Optional: Center align the text and button */
+    margin: 20px; /* Adds margin around the container */
+}
+
+.pre-order-text {
+    color: white; 
+    padding: 10px;
+    margin: 20px;
+    max-width: 70em;
+    text-shadow: 0px 0px 20px black;
+}
+
+.pre-order-text h1 {
+    color: white; 
+    font-size: 40px;
+}
+
+.pre-order-text h2 {
+    color: white; 
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.pre-order-text p {
+    color: white; 
+    font-size: 20px;
+}
+
+.pre-order-info {
+    color: white; 
+    padding: 10px;
+    margin: 20px;
+    max-width: 50em;
+    text-shadow: 0px 0px 20px black;
+}
+
+.pre-order-info h1 {
+    color: white; 
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.pre-order-info p {
+    color: white; 
+    font-size: 20px;
+}
+
+/*Pre-Order Form*/
+
+
 /* Abous Us Specifics */
 .about-us-container {
     display: flex; 
