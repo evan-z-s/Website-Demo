@@ -401,9 +401,8 @@ header {
     top: 0; /* Start at the top */
     left: 0;
     right: 0;
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.5s ease; /* Smooth transition */
     z-index: 1000; /* Ensure it's above other content */
-
 }
 
 header.hidden {
