@@ -190,15 +190,25 @@ html {
 }
 
 .about-us-img {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
+}
+
+.about-us-card-img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
 }
 
 .about-us-card {
-    flex: 1;
     padding: 15px;
     text-align: left; /* Center text in each card */
-    max-width: 190px;
+    max-width: 200px;
     background-color: whitesmoke; /* Light grey with 80% opacity */
     border-radius: 25px;
     margin: 20px;
@@ -209,6 +219,7 @@ html {
 .about-us-card h3 {
     color: black;
     font-weight: 600;
+    max-width: 20em;
 }
 
 .about-us-card p {
