@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the background fixed in place */
     height: 100vh; /* Full height of the viewport */
+    margin-top: 100px;
 }
 
 html {
@@ -395,7 +396,18 @@ a {
 
 /* Header and Navigation */
 header {
-    background-color: transparent;
+    background-image: url("assets/IndependentRoboticsArm1.jpg");
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Start at the top */
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it's above other content */
+
+}
+
+header.hidden {
+    transform: translateY(-100%); /* Move the header out of view */
 }
 
 .headerButton.active {
@@ -621,6 +633,9 @@ footer {
 }
 
 .info-pre-order h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+
     padding-left: 50px;
     padding-right: 50px;
 }
