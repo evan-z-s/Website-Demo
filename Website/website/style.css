@@ -142,6 +142,13 @@ html {
     transition: border-color 0.3s ease;
 }
 
+/* Add a border color change on focus */
+.pre-order-form input:focus,
+.pre-order-form textarea:focus {
+    border-color: lightblue;
+    outline: none; /* Remove default outline */
+}
+
 .pre-order-form button {
     padding: 10px 20px;
     background-color: #232049;
