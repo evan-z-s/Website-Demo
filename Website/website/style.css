@@ -170,7 +170,7 @@ html {
     justify-content: center; 
     align-items: center;
     text-align: left; /* Optional: Center align the text and button */
-    margin: 10px; /* Adds margin around the container */
+    margin: 5px; /* Adds margin around the container */
 }
 
 .about-us-text {
@@ -235,25 +235,26 @@ html {
     align-items: center;
     text-align: left; /* Optional: Center align the text and button */
     margin: 20px; /* Adds margin around the container */
+    margin-bottom: 120px;
 }
 
 .contact-us-text {
     color: white; 
     padding: 10px;
     margin: 50px;
-    margin-right: 20px;
-    max-width: 40em;
+    margin-right: 50px;
+    max-width: 50em;
     text-shadow: 0px 0px 20px black;
 }
 
 .contact-us-text h1 {
     color: white; 
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .contact-us-text p {
     color: white; 
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .contact-us-img {
@@ -277,7 +278,8 @@ html {
     gap: 5px; /* Adds space between the form fields */
     max-width: 600px; /* Limit the form width */
     margin: 20px auto; /* Center the form */
-    padding: 30px;
+    margin-top: 100px;
+    padding: 20px;
     
     background-color: whitesmoke; /* Light background */
     border-radius: 25px;
