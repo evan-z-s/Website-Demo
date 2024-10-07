@@ -379,6 +379,12 @@ header {
     text-shadow: 0px 0px 10px #232049; /* Example shadow effect */
 }
 
+#nav-pre-order.active {
+    color: lightblue; /* Text color for the active link */
+    text-shadow: 0px 0px 10px #232049; /* Example shadow effect */
+    background-color: #051c5a73;
+}
+
 nav {
     margin-top: 25px; /* Keeps the nav from being too high on the page */
     text-align: center; /* Center the text within the nav */
@@ -425,15 +431,17 @@ nav ul li a:hover {
     text-shadow: 0px 0px 5px #232049; /* Light shadow */
 }
 
-.nav-pre-order {
+#nav-pre-order {
     background-color: rgba(255, 255, 255, 0.384);
     border-radius: 25px;
-    padding: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Base shadow */
     transition: background-color 0.5s ease; /* Smooth transition for color and shadow */
 }
 
-.nav-pre-order:hover {
+#nav-pre-order:hover {
     background-color: #051c5a73;
 }
 
@@ -579,6 +587,11 @@ footer {
     /*Background Circle*/
     background-color: whitesmoke;
     border-radius: 50px;
+}
+
+.info-pre-order h2 {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .info-pre-order p{
